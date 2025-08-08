@@ -1,0 +1,40 @@
+# === 核心框架 ===
+fastapi==0.95.2
+uvicorn==0.22.0          # ASGI服务器
+
+# === 数据库 ===
+# sqlalchemy==2.0.20
+psycopg2-binary==2.9.6   # PostgreSQL驱动
+aiosqlite==0.19.0        # SQLite异步驱动（开发环境备用）
+
+# === 用户认证与安全 ===
+python-jose==3.3.0       # JWT令牌生成
+passlib==1.7.4           # 密码哈希
+bcrypt==4.0.1            # 强哈希算法（可选）
+pydantic[email]==1.10.12
+
+# === 文件处理 ===
+python-docx==0.8.11      # Word文档操作
+openpyxl==3.1.2          # Excel操作
+PyPDF2==3.0.1            # PDF基础操作
+reportlab==4.0.4         # PDF生成（复杂需求）
+
+# === 爬虫/自动化 ===
+playwright==1.36.0       # 无头浏览器自动化
+scrapy==2.11.0           # 高级爬虫框架（可选）
+httpx==0.24.1            # 异步HTTP客户端
+
+# === 异步任务队列 ===
+celery==5.3.4            # 分布式任务队列
+redis==4.5.5             # Celery后端/Broker
+
+# === 开发辅助 ===
+pydantic==1.10.12        # 数据校验（FastAPI已内置）
+pydantic-sqlalchemy==0.0.9 # ORM模型转Pydantic（可选）
+python-dotenv==1.0.0     # 环境变量管理
+python-multipart==0.0.6  # 文件上传支持
+
+# === 测试与调试 ===
+pytest==7.4.0
+pytest-asyncio==0.21.1   # 异步测试
+faker==18.12.0           # 测试数据生成
